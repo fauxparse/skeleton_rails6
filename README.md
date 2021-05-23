@@ -1,24 +1,39 @@
-# README
+# Rails application skeleton
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I got sick of doing all these steps every time I started a new project.
 
-Things you may want to cover:
+## Back end
 
-* Ruby version
+* Rails 6.1.3
+* Ruby 2.7.3
+* Postgres database
+* [https://graphql-ruby.org/](`graphql`)
+* ActionCable channel for GraphQL subscriptions
 
-* System dependencies
+## Front end
 
-* Configuration
+* [`typescript`](https://github.com/microsoft/typescript)
+* [`apollo-client`](https://github.com/apollographql/apollo-client)
+* SCSS compilation through Webpack
 
-* Database creation
+## Development
 
-* Database initialization
+* Rubocop
+* ESLint
+* VSCode setup for auto-formatting with ESLint/StyleLint/Rufo
+* GraphiQL
+* Procfile.dev for Overmind
 
-* How to run the test suite
+## Scripts
 
-* Services (job queues, cache servers, search engines, etc.)
+* `yarn types` to generate TypeScript information from GraphQL queries
+* `yarn cosmos` to start Cosmos on port 5000
 
-* Deployment instructions
+## TODO
 
-* ...
+* RSpec/RSpec Mocks/Shoulda/Timecop
+* FactoryBot
+* Dotenv
+* Isomorphic i18n
+* Stylelint config
+* Guard for types
