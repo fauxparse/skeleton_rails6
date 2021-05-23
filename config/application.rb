@@ -34,6 +34,8 @@ module Skeleton
 
     config.generators do |g|
       g.assets false
+      g.helper false
+      g.channel assets: false
     end
 
     # Don't generate system test files.
