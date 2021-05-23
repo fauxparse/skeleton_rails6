@@ -2,6 +2,10 @@
 
 I got sick of doing all these steps every time I started a new project.
 
+```
+curl -L https://raw.githubusercontent.com/fauxparse/skeleton/main/install.sh | zsh
+```
+
 ## Back end
 
 * Rails 6.1.3
@@ -12,6 +16,7 @@ I got sick of doing all these steps every time I started a new project.
 
 ## Front end
 
+* React 17.0.2
 * [`typescript`](https://github.com/microsoft/typescript)
 * [`apollo-client`](https://github.com/apollographql/apollo-client)
 * SCSS compilation through Webpack
