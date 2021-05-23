@@ -4,16 +4,29 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { gql, useQuery } from '@apollo/client';
+import GraphQLProvider from '../graphql/Provider';
 
-interface Props {
-  name: string;
-}
+const QUERY = gql`
+  {
+    testField
+  }
+`;
 
-const Hello: React.FC<Props> = ({ name }) => <div>Hello {name}!</div>;
+const Hello: React.FC = () => {
+  const { loading, data } = useQuery(QUERY);
+
+  if (loading) {
+    return <div>Loading…</div>;
+  }
+  return <div>{data.testField}</div>;
+};
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Hello name="React" />,
+    <GraphQLProvider>
+      <Hello />
+    </GraphQLProvider>,
     document.body.appendChild(document.createElement('div'))
   );
 });
