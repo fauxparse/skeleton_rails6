@@ -15,6 +15,7 @@
     "css-loader": "^5.2.5",
     "graphql": "^15.5.0",
     "graphql-ruby-client": "^1.9.4",
+    "graphql-tag": "^2.12.4",
     "html-webpack-plugin": "^4.5.2",
     "luxon": "^1.27.0",
     "mini-css-extract-plugin": "^1.6.0",
@@ -31,6 +32,10 @@
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
     "@babel/eslint-parser": "^7.14.3",
+    "@graphql-codegen/cli": "1.21.4",
+    "@graphql-codegen/typescript": "1.22.0",
+    "@graphql-codegen/typescript-operations": "1.17.16",
+    "@graphql-codegen/typescript-react-apollo": "2.2.4",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
     "eslint": "^7.27.0",
@@ -47,5 +52,10 @@
   },
   "resolutions": {
     "chokidar": "^3.5.1"
+  },
+  "scripts": {
+    "gql:dump": "rake graphql:schema:dump",
+    "gql:codegen": "graphql-codegen --config codegen.yml",
+    "types": "yarn gql:dump && yarn gql:codegen && yarn prettier -w app/javascript/graphql/types.tsx"
   }
 }

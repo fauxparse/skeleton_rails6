@@ -8,7 +8,7 @@ import { gql, useQuery } from '@apollo/client';
 import GraphQLProvider from '../graphql/Provider';
 
 const QUERY = gql`
-  {
+  query HelloReact {
     testField
   }
 `;
