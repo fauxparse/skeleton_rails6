@@ -1,0 +1,39 @@
+{
+  "eslint.validate": ["typescript", "typescriptreact"],
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.formatOnSave": true
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "jnbt.vscode-rufo",
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "json.schemas": [
+    {
+      "fileMatch": ["cosmos.config.json"],
+      "url": "./node_modules/react-cosmos/config.schema.json"
+    }
+  ],
+  "eslint.packageManager": "yarn",
+  "ruby.rubocop.useBundler": true
+}
