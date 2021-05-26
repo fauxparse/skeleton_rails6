@@ -1,4 +1,6 @@
-require: rubocop-rails
+require:
+  - rubocop-rails
+  - rubocop-rspec
 
 AllCops:
   NewCops: enable
@@ -7,15 +9,26 @@ AllCops:
 Metrics/CyclomaticComplexity:
   Enabled: false
 
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
+
 Layout/LineLength:
   Enabled: true
   Max: 100
+  IgnoredPatterns: ['\A\s*#']
 
 Metrics/MethodLength:
   Enabled: false
 
 Metrics/PerceivedComplexity:
   Enabled: false
+
+Style/BlockComments:
+  Exclude:
+    - spec/spec_helper.rb
 
 Style/Documentation:
   Enabled: false

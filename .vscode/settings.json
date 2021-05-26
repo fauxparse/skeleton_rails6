@@ -35,5 +35,7 @@
     }
   ],
   "eslint.packageManager": "yarn",
-  "ruby.rubocop.useBundler": true
+  "ruby.rubocop.useBundler": true,
+  "jest.jestCommandLine": "yarn jest",
+  "jest.showCoverageOnLoad": true
 }

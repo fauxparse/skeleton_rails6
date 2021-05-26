@@ -20,6 +20,7 @@ curl -L https://raw.githubusercontent.com/fauxparse/skeleton/main/install.sh | z
 * [`typescript`](https://github.com/microsoft/typescript)
 * [`apollo-client`](https://github.com/apollographql/apollo-client)
 * SCSS compilation through Webpack
+* Jest/React Testing Library
 
 ## Development
 
