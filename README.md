@@ -13,6 +13,7 @@ curl -L https://raw.githubusercontent.com/fauxparse/skeleton/main/install.sh | z
 * Postgres database
 * [https://graphql-ruby.org/](`graphql`)
 * ActionCable channel for GraphQL subscriptions
+* [Response compression with Deflater and Brotli](https://pawelurbanek.com/rails-gzip-brotli-compression)
 
 ## Front end
 
@@ -24,11 +25,13 @@ curl -L https://raw.githubusercontent.com/fauxparse/skeleton/main/install.sh | z
 
 ## Development
 
-* Rubocop
-* ESLint
-* VSCode setup for auto-formatting with ESLint/StyleLint/Rufo
-* GraphiQL
-* Procfile.dev for Overmind
+* [Rubocop](https://github.com/rubocop/rubocop)
+* [ESLint](https://eslint.org/)
+* [stylelint](https://stylelint.io/) with [stylelint-config-rational-order](https://github.com/constverum/stylelint-config-rational-order)
+* [rufo](https://github.com/ruby-formatter/rufo)
+* VSCode setup for auto-formatting
+* [GraphiQL](https://github.com/rmosolgo/graphiql-rails)
+* Procfile.dev for [Overmind](https://github.com/DarthSim/overmind)
 
 ## Scripts
 
@@ -37,9 +40,6 @@ curl -L https://raw.githubusercontent.com/fauxparse/skeleton/main/install.sh | z
 
 ## TODO
 
-* RSpec/RSpec Mocks/Shoulda/Timecop
-* FactoryBot
 * Dotenv
 * Isomorphic i18n
-* Stylelint config
 * Guard for types
