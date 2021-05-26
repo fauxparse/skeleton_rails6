@@ -40,6 +40,5 @@ curl -L https://raw.githubusercontent.com/fauxparse/skeleton/main/install.sh | z
 
 ## TODO
 
-* Dotenv
 * Isomorphic i18n
 * Guard for types
