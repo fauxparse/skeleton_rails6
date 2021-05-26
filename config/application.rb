@@ -38,6 +38,10 @@ module Skeleton
       g.channel assets: false
     end
 
+    # Enable compression for responses
+    config.middleware.use Rack::Deflater
+    config.middleware.use Rack::Brotli
+
     # Don't generate system test files.
     config.generators.system_tests = nil
   end
