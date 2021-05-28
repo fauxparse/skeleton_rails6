@@ -35,6 +35,7 @@ find . -name "*.yml" -print0 | xargs -0 sed -i '' -e "s/SKELETON/$constant/g"
 sed -i '' -e "s/Skeleton/$camelcase/g" Rakefile
 sed -i '' -e "s/skeleton/$snakecase/g" package.json
 sed -i '' -e "s/3000/$port/g" Procfile.dev
+mv app/graphql/skeleton_schema.rb "app/graphql/${snakecase}_schema.rb"
 
 bundle
 yarn
