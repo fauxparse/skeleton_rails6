@@ -4,7 +4,7 @@ vared -ec -p $'Application name? \x1b[2m[skeleton]\x1b[0m ' name || exit
 if [ -z $name ]; then; name=skeleton; fi
 
 vared -ec -p $'Rails server port for development? \x1b[2m[3000]\x1b[0m ' port || exit
-if [ -z $name ]; then; port=3000; fi
+if [ -z $port ]; then; port=3000; fi
 
 camelcase=`echo $name | perl -pe 's/_*([^_]*)/\u$1/g'`
 snakecase=`echo $name | perl -pe 's/([a-z0-9])([A-Z])/\L$1_\L$2/g' | perl -pe 's/(^.)/\L$1/'`
