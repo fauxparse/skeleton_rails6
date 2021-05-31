@@ -50,6 +50,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.1",
     "prettier": "^2.3.0",
+    "rails-erb-loader": "^5.5.2",
     "react-cosmos": "^5.6.2",
     "stylelint": "^13.13.1",
     "stylelint-config-rational-order": "^0.1.2",
