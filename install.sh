@@ -39,10 +39,15 @@ mv app/graphql/skeleton_schema.rb "app/graphql/${snakecase}_schema.rb"
 
 bundle
 yarn
+
+set +e
+
 bundle exec rails db:setup
 
 echo "Generating credentials..."
-EDITOR="vim -c wq" bin/rails credentials:edit || true
+EDITOR="vim -c wq" bin/rails credentials:edit
+
+set -e
 
 git init
 git add .
