@@ -42,7 +42,7 @@ yarn
 bundle exec rails db:setup
 
 echo "Generating credentials..."
-EDITOR="vim -c wq" bin/rails credentials:edit
+EDITOR="vim -c wq" bin/rails credentials:edit || true
 
 git init
 git add .
