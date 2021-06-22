@@ -33,8 +33,8 @@ group :development, :test do
 
   gem 'dotenv-rails'
 
-  gem 'rspec', require: false
-  gem 'rspec-rails', require: false
+  gem 'rspec'
+  gem 'rspec-rails'
   gem 'simplecov', require: false
 
   gem 'factory_bot_rails'
